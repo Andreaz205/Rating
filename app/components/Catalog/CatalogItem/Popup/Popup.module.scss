@@ -1,0 +1,105 @@
+.hovered{
+  transition: 0.2s ease;
+  position: absolute;
+  top: -20px;
+  left: -5px;
+  background: white;
+  width: calc(100% + 10px);
+  border: 1px solid black;
+  opacity: 0;
+  z-index: -1;
+  border-radius: 5px;
+
+  .verticalIndent{
+    margin-top: 20px;
+    width: calc(100% - 30px);
+    margin-left: 15px;
+    aspect-ratio: 16/9;
+  }
+
+  .popupContentWrapper{
+    padding: 0 20px;
+
+    .sizeTitle{
+      margin-top: 40px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 130%;
+      /* identical to box height, or 26px */
+      color: #303030;
+    }
+    .sizes{
+      margin-top: 10px;
+      width: 410px;
+
+      .sizeHeaders{
+        display: flex;
+        justify-content: space-between;
+
+        .headerItem{
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 130%;
+          /* or 23px */
+          color: #C6C6C6;
+        }
+      }
+
+      .sizeValues {
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+
+        .value{
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 130%;
+          /* or 23px */
+          color: #303030;
+        }
+      }
+      .line{
+        margin-top: 15px;
+        height: 1px;
+        background: #303030;
+        margin-bottom: 15px;
+      }
+
+      .cartButton{
+        margin-top: 30px;
+        margin-left: 115px;
+        width: 180px;
+        height: 40px;
+        border: 1px solid #303030;
+        background: white;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 130%;
+        /* or 23px */
+        color: #303030;
+
+        &:hover{
+          background: #303030;
+          color: white;
+        }
+      }
+      .details{
+        margin-left: 115px;
+      }
+    }
+  }
+}
+
+.active{
+  opacity: 1;
+  z-index: 1;
+}
